@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/grass.vox-9ed433819bd427722225bfe54b0ddb53.mesh"
+
+[deps]
+
+source_file="res://VOX/grass.vox"
+dest_files=[ "res://.import/grass.vox-9ed433819bd427722225bfe54b0ddb53.mesh" ]
+
+[params]
+
+Scale=0.05
+GreedyMeshGenerator=true
+SnapToGround=false

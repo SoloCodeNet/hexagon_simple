@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/boat.vox-ee97afb211de192632066249fbd6192e.mesh"
+
+[deps]
+
+source_file="res://VOX/boat.vox"
+dest_files=[ "res://.import/boat.vox-ee97afb211de192632066249fbd6192e.mesh" ]
+
+[params]
+
+Scale=0.05
+GreedyMeshGenerator=true
+SnapToGround=false

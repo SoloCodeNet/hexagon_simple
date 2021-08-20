@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://default_env - Copie.tres" type="Environment" id=1]
+[ext_resource path="res://Libraries/blocks.meshlib" type="MeshLibrary" id=2]
+[ext_resource path="res://Libraries/obj.meshlib" type="MeshLibrary" id=3]
+[ext_resource path="res://Scripts/main.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/rotate.gd" type="Script" id=5]
+
+[sub_resource type="OpenSimplexNoise" id=1]
+period = 20.0
+persistence = 0.8
+
+[sub_resource type="NoiseTexture" id=2]
+seamless = true
+noise = SubResource( 1 )
+
+[node name="main" type="Spatial"]
+script = ExtResource( 4 )
+worldSize = 16
+OSN = SubResource( 2 )
+
+[node name="blockmap" type="GridMap" parent="."]
+mesh_library = ExtResource( 2 )
+cell_size = Vector3( 0.4, 0.2, 0.45 )
+data = {
+"cells": PoolIntArray(  )
+}
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, 0, 0 )
+}
+
+[node name="objmap" type="GridMap" parent="."]
+mesh_library = ExtResource( 3 )
+cell_size = Vector3( 0.4, 0.2, 0.45 )
+data = {
+"cells": PoolIntArray(  )
+}
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="cam" type="Spatial" parent="."]
+transform = Transform( -1.62921e-07, 0, 0.999999, 0, 0.999999, 0, -1, 0, -1.62921e-07, 0, 0, 0 )
+script = ExtResource( 5 )
+
+[node name="pivot" type="Spatial" parent="cam"]
+
+[node name="Camera" type="Camera" parent="cam/pivot"]
+transform = Transform( -1.62921e-07, -0.642788, 0.766044, 0, 0.766044, 0.642788, -1, 1.04723e-07, -1.24804e-07, 25, 25, 0 )
+environment = ExtResource( 1 )
+fov = 30.0
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0 )
+light_energy = 1.1
+light_indirect_energy = 1.2
+shadow_enabled = true

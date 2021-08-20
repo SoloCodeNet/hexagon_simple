@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/island.vox-75a5d454a1e054f51ae56252266e39f2.mesh"
+
+[deps]
+
+source_file="res://VOX/island.vox"
+dest_files=[ "res://.import/island.vox-75a5d454a1e054f51ae56252266e39f2.mesh" ]
+
+[params]
+
+Scale=0.05
+GreedyMeshGenerator=true
+SnapToGround=false

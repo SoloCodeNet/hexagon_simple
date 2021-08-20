@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/tree1.vox-e7e9d0178e98be944215f36d70c3cac8.mesh"
+
+[deps]
+
+source_file="res://VOX/tree1.vox"
+dest_files=[ "res://.import/tree1.vox-e7e9d0178e98be944215f36d70c3cac8.mesh" ]
+
+[params]
+
+Scale=0.05
+GreedyMeshGenerator=true
+SnapToGround=false

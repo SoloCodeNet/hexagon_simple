@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/water.vox-ac0121f425ab772ccd3f588877a211d1.mesh"
+
+[deps]
+
+source_file="res://VOX/water.vox"
+dest_files=[ "res://.import/water.vox-ac0121f425ab772ccd3f588877a211d1.mesh" ]
+
+[params]
+
+Scale=0.05
+GreedyMeshGenerator=true
+SnapToGround=false
